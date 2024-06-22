@@ -3,25 +3,25 @@
 
 using namespace std;
 
-void to_lower(char &c) {
+void to_lower(char& c) {
 	if (c >= 'A' && c <= 'Z') {
 		c += 32;
 	}
 }
 
-void to_upper(char &c) {
+void to_upper(char& c) {
 	if (c >= 'a' && c <= 'z') {
 		c -= 32;
 	}
 
 }
 
-char* my_strock(char* str, char* delim, int &word_count) {
-	for (size_t i = 0; i < my_strlen(str); i++) 
+char* my_strock(char* str, char* delim, int& word_count) {
+	for (size_t i = 0; i < my_strlen(str); i++)
 	{
-		for (size_t j = 0; j < my_strlen(delim); j++) 
+		for (size_t j = 0; j < my_strlen(delim); j++)
 		{
-			if (str[i] == delim[j]) 
+			if (str[i] == delim[j])
 			{
 				str[i] = '\0';
 				str[i] = ' ';
@@ -31,11 +31,12 @@ char* my_strock(char* str, char* delim, int &word_count) {
 	}int counter = 0;
 	for (size_t i = 0; i < my_strlen(str); i++)
 	{
-		if (str[i] != ' ' && str[i+1] != ' ')
+		if (str[i] != ' ' && str[i + 1] != ' ')
 		{
 			size_t j = 0;
 			for (size_t j = i; j < my_strlen(str); j++)
-			{}
+			{
+			}
 			i = j;
 			counter++;
 		}
